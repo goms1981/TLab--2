@@ -42,7 +42,7 @@ We recommend working on this module **first**.
 
 **metrics.py**
 
-This module contains three functions that you will implement to calculate various descriptive statistics on a window of data. For example, in the `window_average` function, you will calculate your data's [moving average](h/en.wttps:/ikipedia.org/wiki/Moving_average) based on some window size parameter `n`.
+This module contains three functions that you will implement to calculate various descriptive statistics on a window of data. For example, in the `window_average` function, you will calculate your data's [moving average](https:/wikipedia.org/wiki/Moving_average) based on some window size parameter `n`.
 
 You will apply this concept to calculate the rolling maximum and standard deviation. As these functions will only be called **after** you've cleaned and removed outliers, you can expect your list of data to be integers.
 
