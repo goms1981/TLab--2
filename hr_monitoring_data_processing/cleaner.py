@@ -1,5 +1,8 @@
 def filter_nondigits(data: list) -> list:
     """
+    
+    """
+    """
     Filter all strings from list that are not integers
 
     Args:
