@@ -14,7 +14,9 @@ def run(filename: str) -> None:
     """
     Process heart rate data from the specified file, clean it, calculate metrics, 
     and save visualizations.
+    """
 
+    """
     Args:
         filename (str): The path to the data file (e.g., 'data/data1.txt').
         
@@ -31,33 +33,27 @@ def run(filename: str) -> None:
     Returns:
         list[int], list[int], list[int]: You will return the maximums, averages, and stdevs (in this order).
     """  
+    
     data = []
 
-    # open file and read into the `data` list
-    # path = filename
-    # file = open(path, 'r')
-    # text = file.read()
-    # data = text.splitlines()
 
     with open(filename) as file:
         data = file.read().splitlines()
 
 
-    #Use `filter_nondigits` to clean the data and remove invalid entries.
+    #clean the data and remove invalid entries
     data = filter_nondigits(data)
-    #Use `filter_outliers` to remove unrealistic heart rate samples (<30 or >250).
+    #remove certain heart rate samples (<30 or >250).
     data = filter_outliers(data)
 
 
-    #rounding
-    
-    
-    #Calculate rolling maximums, averages, and standard deviations using functions from `metrics.py`.
+    #calculate rolling maximums, averages, and standard deviations using functions from `metrics.py`.
     maximums = window_max(data, 6) 
     averages = window_average(data, 6)
     stdevs = window_stddev(data, 6)
 
 
+    #rounds averages and stdevs to 2 places
     for val in range(len(averages)):
         averages[val] = round(averages[val], 2)
     for val in range(len(stdevs)):

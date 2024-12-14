@@ -6,7 +6,9 @@ def window_max(data: list, n: int) -> list:
     #window_max([1, 2, 3, 4, 5, 6, 7], 3)
     """
     Calculate maximum value of every "n"-size window
+    """
 
+    """
     Args:
         data (list[int]): list of integers representing heart rate samples
         n (int): The size of your window
@@ -27,6 +29,9 @@ def window_max(data: list, n: int) -> list:
 
 
 def window_average(data: list, n: int) -> list:
+    """
+    Calculates the average of an n size window
+    """
     result=[]
     if not data or n <= 0:
         return []
@@ -40,6 +45,9 @@ def window_average(data: list, n: int) -> list:
 
 
 def window_stddev(data: list, n: int) -> list:
+    """
+    Calculates the standard deviation of n size window
+    """
     result=[]
     if not data or n <= 0:
         return []
