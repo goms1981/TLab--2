@@ -14,11 +14,22 @@ Standard deviation in the context of heart rate means that if you have low stand
 
 Run your `main.py` module and look at the graph labeled "averages.png." Roughly speaking, where do you see the time series experience a significant difference in values along the x-axis? Point out all x-values where you notice a drastic difference in future values.
 
+These following x values are where I notice drastic increases/decreases.
 x=5
 x=10
 x=20
 x=25
 x=40
+
+At x = 5, I see a great increase where the average heart rate jumps from 65 to around 95. 
+
+At x = 10, I see a decrease from about 93 beats to 80 beats. 
+
+At x = 20, there is a slight increase from around 83 to 94 beats.
+
+At x = 25, there is a medium decrease from 93 beats to around 80 beats again.
+
+Lastly, at x = 40, there is a slight decrease from 90 beats to around 76 beats.
 
 ## Question 4
 

@@ -14,9 +14,9 @@ def run(filename: str) -> None:
     """
     Process heart rate data from the specified file, clean it, calculate metrics, 
     and save visualizations.
-    """
+    
 
-    """
+    
     Args:
         filename (str): The path to the data file (e.g., 'data/data1.txt').
         
@@ -80,10 +80,6 @@ def run(filename: str) -> None:
 
     # return all 3 lists
     return maximums, averages, stdevs
-
-
-    
-
 
 if __name__ == "__main__":
     run("data/data1.txt")
